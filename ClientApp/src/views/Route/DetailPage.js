@@ -13,10 +13,11 @@ class DetailPage extends React.Component {
 
     render() {
         const pj = () => {
+            console.log("test",this.props.location.pathname);
             switch (this.props.location.pathname) {
-                case "/IT/SIT":
+                case "/detail/IT/SIT":
                     return <SoftwareIT />
-                case "/IT/HIT":
+                case "/detail/IT/HIT":
                     return <HardwareIT />
                 default:
                     return <NotFound />

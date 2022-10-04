@@ -172,7 +172,8 @@ class FeatureList extends React.Component {
                                 <td  className="text-right">{item.menuCode}</td>
                                 <td  className="text-right">{item.menuGroupCode}</td>
                                 <td  className="text-right">{item.moduleCode}</td>
-                                <td onClick={() => this.ToDetailFeature(item)} style={{color: "blue"}} className="text-right">{item.pageURL}</td>
+                                {/* <td onClick={() => this.ToDetailFeature(item)} style={{color: "blue"}} className="text-right">{item.pageURL}</td> */}
+                                <td><Link to={`/detail/${item.menuGroupCode}${item.pageURL}`}>{item.pageURL}</Link></td>
                                 {item.roleName === "Administrator" || item.roleName === "Checker" || item.roleName === "Maker" ?
                                     <td></td> :
                                     <>

@@ -30,7 +30,7 @@ export default class App extends Component {
         <Route path='/newfeature' component={NewFeature} />
         <Route path='/editfeature/:id' component={NewFeature} />
 
-        <Route path= '/:MainRoute/:SubRoute' component={DetailPage}/>
+        <Route path= '/detail/:MainRoute/:SubRoute' component={DetailPage}/>
 
         <Route path='/pagefeature/:id' component={PageFeatureList} />
 
